@@ -7,6 +7,7 @@ namespace TestRegex
     [TestClass]
     public class BasicTests
     {
+        /*
         [DataTestMethod]
         [DataRow("", "", true)]
         [DataRow("a", null, false)]
@@ -15,9 +16,9 @@ namespace TestRegex
         public void safety_test(string regex, string input, bool expected)
         {
             //Arrange
-            Tokenizer tokenizer = new Tokenizer();
+            Analyzer tokenizer = new Analyzer();
             //Act
-            bool result = Tokenizer.Tokenizer(regex);
+            bool result = Analyzer.Parse(regex,input);
             //Assert
             Assert.AreEqual(expected, result);
         }
@@ -29,9 +30,9 @@ namespace TestRegex
         public void simple_char_test(string regex, string input, bool expected)
         {
             //Arrange
-            Tokenizer tokenizer = new Tokenizer();
+            Analyzer tokenizer = new Analyzer();
             //Act
-            bool result = Tokenizer.Tokenizer(regex);
+            bool result = Analyzer.Parse(regex);
             //Assert
             Assert.AreEqual(expected, result);
         }
@@ -51,6 +52,6 @@ namespace TestRegex
             //Assert
             Assert.AreEqual(expected, result);
         }
-
+        */
     }
 }

@@ -7,6 +7,7 @@ namespace TestRegex
     [TestClass]
     public class OrTests
     {
+        /*
         [DataTestMethod]
         [DataRow("a|b", "a", true)] //match "a" or "b"
         [DataRow("a|b", "b", true)] //match "a" or "b"
@@ -38,5 +39,6 @@ namespace TestRegex
             //Assert
             Assert.AreEqual(expected, result);
         }
+        */
     }
 }
